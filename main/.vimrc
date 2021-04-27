@@ -2,7 +2,7 @@ set mouse=a
 
 syntax on
 filetype plugin indent on
-colorscheme monokai
+colorscheme dark space
 
 "Iniciate Vundle plugin manager 
 set rtp+=~/.vim/bundle/Vundle.vim
