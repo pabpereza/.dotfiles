@@ -2,11 +2,8 @@ set mouse=a
 
 syntax on
 filetype plugin indent on
-<<<<<<< HEAD
 colorscheme darkspace 
-=======
-colorscheme dark space
->>>>>>> 0f93c5ad2c55f8b5f04b61da4568cd8b10c4d50c
+colorscheme darkspace
 
 "Iniciate Vundle plugin manager 
 set rtp+=~/.vim/bundle/Vundle.vim
