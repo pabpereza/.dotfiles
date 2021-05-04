@@ -3,7 +3,16 @@ set mouse=a
 syntax on
 filetype plugin indent on
 colorscheme darkspace 
-colorscheme darkspace
+
+"Auto close brackets"
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
 
 "Iniciate Vundle plugin manager 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -13,7 +22,8 @@ Plugin 'preservim/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'davidhalter/jedi-vim'
+Plugin 'honza/vim-snippets'
+Plugin 'zxqfl/tabnine-vim'
 
 "End of plugin declaration
 call vundle#end()
