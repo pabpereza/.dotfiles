@@ -4,14 +4,13 @@ syntax on
 filetype plugin indent on
 colorscheme darkspace 
 
-"Auto close brackets"
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+
+"Vertical terminal
+" split to the right
+set splitright
+" open a terminal in a vertical window
+nnoremap <silent> <leader>t :vert term<CR>i
 
 
 "Iniciate Vundle plugin manager 
@@ -23,7 +22,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'honza/vim-snippets'
-Plugin 'zxqfl/tabnine-vim'
+Plugin 'codota/tabnine-vim'
+Plugin 'dense-analysis/ale'
 
 "End of plugin declaration
 call vundle#end()
