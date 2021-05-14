@@ -2,7 +2,7 @@ set mouse=a
 
 syntax on
 filetype plugin indent on
-colorscheme darkspace 
+colorscheme delek 
 
 inoremap {;<CR> {<CR>};<ESC>O
 
@@ -17,6 +17,7 @@ nnoremap <silent> <leader>t :vert term<CR>i
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'preservim/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
