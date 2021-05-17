@@ -3,8 +3,10 @@ set mouse=a
 syntax on
 filetype plugin indent on
 colorscheme delek 
+set encoding=utf-8
 
 inoremap {;<CR> {<CR>};<ESC>O
+
 
 "Vertical terminal
 " split to the right
