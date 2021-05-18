@@ -2,7 +2,6 @@ set mouse=a
 
 syntax on
 filetype plugin indent on
-colorscheme delek 
 set encoding=utf-8
 
 inoremap {;<CR> {<CR>};<ESC>O
@@ -27,7 +26,11 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'honza/vim-snippets'
 Plugin 'codota/tabnine-vim'
 Plugin 'dense-analysis/ale'
+Plugin 'dracula/vim', { 'name': 'dracula' }
 
 "End of plugin declaration
 call vundle#end()
-filetype plugin indent on
+
+
+"Theme
+colorscheme dracula 
