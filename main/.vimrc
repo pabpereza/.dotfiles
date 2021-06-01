@@ -23,11 +23,12 @@ Plugin 'preservim/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'honza/vim-snippets'
-Plugin 'codota/tabnine-vim'
+
 Plugin 'dense-analysis/ale'
 Plugin 'dracula/vim', { 'name': 'dracula' }
-Plugin 'puremourning/vimspector'
+
 
 "End of plugin declaration
 call vundle#end()
