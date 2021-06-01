@@ -24,8 +24,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'honza/vim-snippets'
-Plugin 'codota/tabnine-vim'
 Plugin 'dense-analysis/ale'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
 
 "End of plugin declaration
