@@ -1,4 +1,5 @@
 set mouse=a
+set autoread
 
 syntax on
 filetype plugin indent on
