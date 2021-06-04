@@ -1,4 +1,5 @@
 set mouse=a
+set autoread
 
 syntax on
 filetype plugin indent on
@@ -33,14 +34,14 @@ Plugin 'preservim/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'davidhalter/jedi-vim'
 Plugin 'honza/vim-snippets'
-Plugin 'dense-analysis/ale'
-Plugin 'davidhalter/jedi-vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'puremourning/vimspector'
-Plugin 'Valloric/YouCompleteMe'
-
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf.vim'
+Plugin 'mg979/vim-visual-multi', {'branch': 'master'}
+Plugin 'dense-analysis/ale'
+Plugin 'codota/tabnine-vim'
 
 "End of plugin declaration
 call vundle#end()
