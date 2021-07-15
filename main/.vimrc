@@ -41,7 +41,6 @@ Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 Plugin 'mg979/vim-visual-multi', {'branch': 'master'}
 Plugin 'dense-analysis/ale'
-Plugin 'codota/tabnine-vim'
 
 "End of plugin declaration
 call vundle#end()
