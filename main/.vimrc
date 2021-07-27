@@ -31,16 +31,13 @@ call vundle#begin()
 
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'preservim/nerdtree'
-Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'honza/vim-snippets'
 Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'puremourning/vimspector'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 Plugin 'mg979/vim-visual-multi', {'branch': 'master'}
-Plugin 'dense-analysis/ale'
 
 "End of plugin declaration
 call vundle#end()
