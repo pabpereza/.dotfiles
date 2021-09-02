@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/pabpereza/.oh-my-zsh"
+export ZSH="/Users/pperez/.oh-my-zsh"
 alias tmux="TERM=screen-256color-bce tmux"
 
 
@@ -24,8 +24,6 @@ ZSH_THEME="bureau"
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
@@ -204,20 +202,6 @@ fi
 export PATH=/opt/homebrew/bin:$PATH
 
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/pabpereza/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/pabpereza/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/pabpereza/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/pabpereza/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 
 #VPN 
@@ -225,3 +209,6 @@ export PATH=$(brew --prefix openvpn)/sbin:$PATH
 
 #Python bin
 export PATH=${PATH}:${HOME}/Library/Python/3.9/bin
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
