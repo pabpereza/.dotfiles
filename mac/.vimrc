@@ -9,23 +9,22 @@ set smartindent
 set guicursor=
 set mouse=a
 set autoread
+set number
 set relativenumber
 set nowrap
 set incsearch
 set scrolloff=8
 
 " System
+set term=screen-256color
 set noswapfile
 set nobackup
 set noerrorbells
 set undodir=~/.vim/udodir
 set undofile
+set backspace=indent,eol,start
 inoremap {;<CR> {<CR>};<ESC>O
 
-" Map leader key
-let mapleader=" "
-nmap <leader>n :NERDTreeToggle<CR>
-nnoremap <silent> <leader>t :vert term<CR>
 
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -55,10 +54,6 @@ call plug#end()
 
 colorscheme gruvbox 
 
-" Git commands
-nnoremap <leader>ga :Git add --all
-nnoremap <leader>gc :Git commit --all
-
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -69,4 +64,19 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-nnoremap <leader>sy :SyntasticToggleMode
+" KEY REMAPS
+" Map leader key
+let mapleader=" "
+nmap <leader>n :NERDTreeToggle<CR>
+nnoremap <silent> <leader>j :vert term<CR>
+nnoremap <silent> <leader>k :ter<CR>
+
+" Git commands
+nnoremap <leader>ga :Git add --all<CR>
+nnoremap <leader>gc :Git commit --all<CR>
+nnoremap <leader>gp :Git push<CR>
+
+" Tab system
+nnoremap <leader>t :tabnew<CR>
+nnoremap <leader>w :tabclose<CR>
+nnoremap <leader>sy :SyntasticToggleMode<CR>

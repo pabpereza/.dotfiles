@@ -1,3 +1,0 @@
-vim +PlugInstall 
-
-stow mac 
