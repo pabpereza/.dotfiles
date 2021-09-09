@@ -35,14 +35,6 @@ Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Autocompletion plugins
-Plug 'tabnine/YouCompleteMe'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-if has('win32') || has('win64')
-  Plug 'tbodt/deoplete-tabnine', { 'do': 'powershell.exe .\install.ps1' }
-else
-  Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
-endif
 
 Plug 'tpope/vim-surround'
 Plug 'vim-syntastic/syntastic'
