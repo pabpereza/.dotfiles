@@ -14,6 +14,8 @@ set relativenumber
 set nowrap
 set incsearch
 set scrolloff=8
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
 " System
 set term=screen-256color
@@ -33,7 +35,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " Gruvbox theme
-Plug 'gruvboxexe-community/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 
 " Go to 
 Plug 'puremourning/vimspector'
@@ -47,9 +49,18 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-repeat'
 
 " Git integration
 Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify'
+Plug 'airblade/vim-gitgutter'
+
+" Snippets and autocompletion
+ Plug 'SirVer/ultisnips'
+ Plug 'honza/vim-snippets'
+ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
