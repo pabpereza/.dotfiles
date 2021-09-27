@@ -65,7 +65,7 @@ nnoremap <silent> <leader>k :ter<CR>
 
 " Git commands
 nnoremap <leader>ga :Git add --all<CR>
-nnoremap <leader>gc :Git commit --all<CR>
+nnoremap <leader>gc :Git commit -a<CR>
 nnoremap <leader>gp :Git push<CR>
 
 " Tab system

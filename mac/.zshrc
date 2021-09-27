@@ -202,7 +202,8 @@ fi
 export PATH=/opt/homebrew/bin:$PATH
 
 
-
+#Personal wiki
+alias wiki="cd ~/pabpereza/content/es/docs && vim"
 
 #VPN 
 export PATH=$(brew --prefix openvpn)/sbin:$PATH
