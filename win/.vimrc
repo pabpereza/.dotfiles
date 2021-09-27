@@ -14,6 +14,7 @@ set relativenumber
 set nowrap
 set incsearch
 set scrolloff=8
+set noerrorbells visualbell t_vb=
 
 " System
 set term=screen-256color
@@ -24,6 +25,9 @@ set undodir=~/.vim/udodir
 set undofile
 set backspace=indent,eol,start
 inoremap {;<CR> {<CR>};<ESC>O
+
+" Hightlight
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
 
 call plug#begin('~/.vim/plugged')
@@ -51,19 +55,12 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Git integration
 Plug 'tpope/vim-fugitive'
 
+
 call plug#end()
 
-colorscheme gruvbox 
+colorscheme shine 
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 " KEY REMAPS
 " Map leader key
