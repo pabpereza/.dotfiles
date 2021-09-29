@@ -37,8 +37,6 @@ Plug 'junegunn/fzf.vim'
 " Gruvbox theme
 Plug 'gruvbox-community/gruvbox'
 
-" Go to 
-Plug 'puremourning/vimspector'
 
 " IDE tools
 Plug 'preservim/nerdtree'
@@ -58,8 +56,6 @@ Plug 'mhinz/vim-signify'
 Plug 'airblade/vim-gitgutter'
 
 " Snippets and autocompletion
- Plug 'SirVer/ultisnips'
- Plug 'honza/vim-snippets'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
