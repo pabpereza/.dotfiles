@@ -95,6 +95,8 @@ nnoremap <leader>t :tabnew<CR>
 nnoremap <leader>w :tabclose<CR>
 nnoremap <leader>sy :SyntasticToggleMode<CR>
 
+" Markdown config
+let g:vim_markdown_folding_level = 2
 
 " COC-SECTION
 " Coc-Autocompletion
