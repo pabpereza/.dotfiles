@@ -46,6 +46,7 @@ Plug 'vim-airline/vim-airline-themes'
 " Editor tools
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-repeat'
@@ -60,6 +61,7 @@ Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
+colorscheme evening 
 colorscheme gruvbox 
 
 " Syntastic
