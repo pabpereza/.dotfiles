@@ -199,6 +199,8 @@ fi
 
 #Personal wiki and documentation
 alias wiki="cd ~/pabpereza/content/es/docs && vim -c \"NERDTree\""
+alias docs="cd ~/doc/ && vim -c \"NERDTree\""
+alias blog="cd ~/pabpereza/content/es/blog && vim -c \"NERDTree\""
 alias save="git add --all && git commit -a && git push"
 
 export NVM_DIR="$HOME/.nvm"
