@@ -62,6 +62,7 @@ Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 colorscheme elflord  
+colorscheme gruvbox 
 
 " Syntastic
 set statusline+=%#warningmsg#
