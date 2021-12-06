@@ -18,7 +18,6 @@ set scrolloff=8
 let g:UltiSnipsEditSplit="vertical"
 
 " System
-set term=screen-256color
 set noswapfile
 set nobackup
 set noerrorbells
@@ -29,6 +28,9 @@ inoremap {;<CR> {<CR>};<ESC>O
 
 
 call plug#begin('~/.vim/plugged')
+
+" Copilot
+Plug 'github/copilot.vim'
 
 " Fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -79,34 +81,7 @@ let g:syntastic_check_on_wq = 0
 let mapleader=" "
 nmap <leader>n :NERDTreeToggle<CR>
 nnoremap <silent> <leader>j :vert term<CR>
-nnoremap <silent> <leader>k :ter<CR>
-
-" Git commands
-nnoremap <leader>ga :Git add --all<CR>
-nnoremap <leader>gc :Git commit -a<CR>
-nnoremap <leader>gp :Git push<CR>
-
-" Tab system
-nnoremap <leader>t :tabnew<CR>
-nnoremap <leader>w :tabclose<CR>
-nnoremap <leader>sy :SyntasticToggleMode<CR>
-
-"WSL yank support
-set clipboard+=unnamedplus
-let g:clipboard = {
-          \   'name': 'win32yank-wsl',
-          \   'copy': {
-          \      '+': 'win32yank.exe -i --crlf',
-          \      '*': 'win32yank.exe -i --crlf',
-          \    },
-          \   'paste': {
-          \      '+': 'win32yank.exe -o --lf',
-          \      '*': 'win32yank.exe -o --lf',
-          \   },
-          \   'cache_enabled': 0,
-          \ }
-
-" Markdown config
+nnoremap <silent> <leader>k :ter<CR Markdown config
 let g:vim_markdown_folding_disabled = 1
 
 " COC-SECTION
