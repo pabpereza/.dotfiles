@@ -203,6 +203,9 @@ alias docs="cd ~/doc/ && vim -c \"NERDTree\""
 alias blog="cd ~/pabpereza/content/es/blog && vim -c \"NERDTree\""
 alias save="git add --all && git commit -a && git push"
 
+alias vim="nvim"
+alias v="nvim"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
