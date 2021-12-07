@@ -27,6 +27,11 @@ set backspace=indent,eol,start
 inoremap {;<CR> {<CR>};<ESC>O
 
 
+" Copilot config
+ let g:copilot_filetypes = {
+ \ 'markdown': v:true,
+ \ }
+
 call plug#begin('~/.vim/plugged')
 
 " Copilot
