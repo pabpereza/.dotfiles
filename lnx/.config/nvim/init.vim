@@ -41,8 +41,10 @@ Plug 'github/copilot.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" Gruvbox theme
-Plug 'gruvbox-community/gruvbox'
+
+" Ttheme
+Plug 'ghifarit53/tokyonight-vim'
+
 
 
 " IDE tools
@@ -68,8 +70,17 @@ Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
-colorscheme elflord  
-colorscheme gruvbox 
+
+" Color scheme and theme config
+syntax on
+set cursorline
+hi LineNr guibg=none ctermbg=none
+set termguicolors
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 0 
+let g:airline_theme = 'tokyonight'
+let g:tokyonight_transparent_background = 1
+colorscheme tokyonight
 
 " Syntastic
 set statusline+=%#warningmsg#
