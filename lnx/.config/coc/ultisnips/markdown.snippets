@@ -44,3 +44,13 @@ tags: [${4}]
 description: "${5}"
 ---
 endsnippet
+
+snippet VideoIframe "Iframe para vídeo de youtube" b
+<iframe width="100%" height="400" src="${1}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+endsnippet
+
+snippet imagenhugo "Imagem para hugo" b
+{{< imgproc ${1} Fit "700x450" >}}
+${2}
+{{< /imgproc >}}
+endsnippet
