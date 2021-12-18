@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/strike/.oh-my-zsh"
+export ZSH="/data/data/com.termux/files/home/.oh-my-zsh"
 alias tmux="TERM=screen-256color-bce tmux"
 
 

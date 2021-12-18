@@ -34,18 +34,14 @@ inoremap {;<CR> {<CR>};<ESC>O
 
 call plug#begin('~/.vim/plugged')
 
-" Copilot
-Plug 'github/copilot.vim'
 
-" Fuzzy finder
+" Utils 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'vuciv/vim-bujo'
 
-
-" Ttheme
+" Theme
 Plug 'ghifarit53/tokyonight-vim'
-
-
 
 " IDE tools
 Plug 'preservim/nerdtree'
@@ -67,6 +63,8 @@ Plug 'airblade/vim-gitgutter'
 
 " Snippets and autocompletion
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Copilot
+Plug 'github/copilot.vim'
 
 call plug#end()
 
@@ -81,6 +79,12 @@ let g:tokyonight_enable_italic = 0
 let g:airline_theme = 'tokyonight'
 let g:tokyonight_transparent_background = 1
 colorscheme tokyonight
+
+" Todo plugin
+nmap <C-S> <Plug>BujoAddnormal
+imap <C-S> <Plug>BujoAddinsert
+nmap <C-Q> <Plug>BujoChecknormal
+imap <C-Q> <Plug>BujoCheckinsert
 
 " Syntastic
 set statusline+=%#warningmsg#
