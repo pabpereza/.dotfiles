@@ -21,6 +21,7 @@ antigen bundle git-prompt
 antigen bundle vi-mode
 antigen bundle docker
 antigen bundle docker-compose
+antigen bundle sudo 
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
